@@ -1,7 +1,9 @@
 import { Profile } from "./Profile/profile";
 import { Statistics } from "./Statistics/statistics";
+import { FriendList } from "./FriendList/friendlist";
 import data from './Statistics/data.json';
 import user from "./Profile/user.json";
+import friends from "./FriendList/friends.json";
 import 'modern-normalize';
 
 export const App = () => {
@@ -25,6 +27,7 @@ export const App = () => {
         stats={user.stats} />
       <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} />
+      <FriendList friends={friends} />
     </div>
   );
 };
