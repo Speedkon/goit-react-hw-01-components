@@ -6,21 +6,20 @@ import data from './Statistics/data.json';
 import user from "./Profile/user.json";
 import friends from "./FriendList/friends.json";
 import transactions from "./Transactions/transactions.json";
-import 'modern-normalize';
 
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
-      }}
-    >
+        color: '#010101',
+        marginTop: 40,
+        marginBottom: 40
+      }}>
       <Profile
         username={user.username}
         tag={user.tag}
